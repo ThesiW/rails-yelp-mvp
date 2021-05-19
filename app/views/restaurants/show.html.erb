@@ -1,0 +1,20 @@
+<div class="container">
+  <body class="mt-3 pt-3 d-flex justify-content-center">
+    <div class="col-12 col-md-6 offset-md-3">
+      <h1 class="d-flex justify-content-center"><%= @restaurant.name %></h1>
+      <div class="row">
+        <p class="d-flex justify-content-center">
+          <%= @restaurant.address %>
+        </p>
+        <p class="d-flex justify-content-center">
+          <%= @restaurant.category.capitalize %>
+        </p>
+        <p class="d-flex justify-content-center">
+        <%= link_to "Back to my list", restaurants_path  %>
+        </p>
+      </div>
+      <div>
+      </div>
+    </div>
+  </body>
+</div>

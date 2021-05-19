@@ -1,0 +1,14 @@
+
+  <body class="mt-3 pt-3">
+    <div class="row">
+      <div class="col-12 col-md-6 offset-md-3">
+        <%= simple_form_for(@restaurant) do |f| %>
+          <%= f.input :name %>
+          <%= f.input :address %>
+          <%= f.input :category %>
+          <%= f.submit "submit", class:'w-100 mt-3 btn btn-primary' %>
+        <% end %>
+      </div>
+    </div>
+  </body>
+

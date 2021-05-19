@@ -1,0 +1,12 @@
+<div class="container">
+  <body>
+
+    <div class="col-12 col-md-6 offset-md-3">
+      <h1 class="mt-3 pt-3 d-flex justify-content-center">These are all my reviews</h1>
+      <% @reviews.each do |review| %>
+      <p class="d-flex justify-content-center"><%= link_to review.content, restaurant_reviews_path(restaurant) %></p>
+    <% end %>
+    </div>
+
+  </body>
+</div>
